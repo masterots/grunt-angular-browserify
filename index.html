@@ -4,9 +4,14 @@
     <title>Boom</title>
   </head>
   <body>
-    <h1 ng-controller="MyAppController as myAppCtrl">
-      {{myAppCtrl.header}}
-    </h1>
+    <div ng-controller="MyAppController as myAppCtrl">
+      <h1>
+        {{myAppCtrl.header}}
+      </h1>
+      <ul>
+        <li ng-repeat="item in myAppCtrl.myArray">{{item}}</li>
+      </ul>
+    </div>
     <script src="build/lib.js"></script>
     <script src="build/app.js"></script>
   </body>
